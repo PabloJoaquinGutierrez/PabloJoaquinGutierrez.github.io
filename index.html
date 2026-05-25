@@ -2,54 +2,247 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil de Pablo Joaquin Gutierrez Pilco</title>
-    <meta name="google-site-verification" content="vMef12ixBuztwevJRn9growrJO2rIP_ZQCH6YK0H--g" />
-    <link rel="icon" type="image/png" href="favicon2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Joaquin Gutierrez Pilco</title>
+    
+    <!-- RECUERDA: Aquí debes pegar TU código meta de Google Search Console -->
+    <meta name="google-site-verification" content="TU_CODIGO_AQUI" />
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* Puedes cambiar esta URL si deseas un fondo distinto */
+            background-image: url('https://wallpapers.com/images/hd/cyber-binary-codes-in-blue-2vxo833e5tmqvdlh.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            padding: 50px 0;
+            background-color: #000000;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            color: #ffffff;
+            border-bottom: 5px solid #4072c7;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #4072c7;
+            text-shadow: 2px 2px #a685f7;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #4072c7;
+        }
+
+        .header-photo {
+            width: 180px;
+            height: 180px;
+            border: 3px solid #4072c7;
+            box-shadow: 0 0 15px #4072c7;
+            margin-top: 20px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        section {
+            background-color: #191c19;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #4072c7;
+            text-align: left;
+            width: 45%;
+            position: relative;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #4072c7;
+            margin-bottom: 20px;
+        }
+
+        section p, section ul, section a {
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+
+        .about-me:before {
+            content: "🖱️";
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 2em;
+        }
+
+        .about-me:after {
+            content: "⌨️";
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            font-size: 2em;
+        }
+
+        .course-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #191c19;
+            border-radius: 10px;
+            border: 1px solid #4072c7;
+            position: relative;
+        }
+
+        .course-item:before {
+            content: "💻";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 1.5em;
+        }
+
+        .course-item:after {
+            content: "👨🏻‍💻";
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+            font-size: 1.5em;
+        }
+
+        a {
+            color: #5fa8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #a0c4ff;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        footer:before {
+            content: "💾";
+            margin-right: 10px;
+        }
+
+        footer:after {
+            content: "💿";
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
 
-    <table width="100%" border="0" cellpadding="10" cellspacing="0">
-        <tr>
-            <td align="left" valign="top" width="160">
-                <img src="carne-pjgp-1_JgKQoHYP.jpg" alt="Foto de Pablo Joaquin" width="150">
-            </td>
+    <header>
+        <h1>Pablo Joaquin Gutierrez Pilco</h1>
+        <img src="pablo_foto.jpg" class="header-photo">
+        <p>Ciencias de la Computación.</p>
+    </header>
 
-            <td align="center" valign="top">
-                <h1>Pablo Joaquin Gutierrez Pilco</h1>
-                <p>Estudiante de Ciencia de la Computación | <a href="https://dc.ucsp.edu.pe/pregrado/">Universidad Católica San Pablo (UCSP) Facultad de Ciencias de la Computación</a></p>
-            </td>
+    <div class="main-content">
+        <section class="about-me">
+            <h2>Presentación</h2>
+            <div class="info">
+                <li><strong>Nombre:</strong> Pablo Joaquin Gutierrez Pilco</li>
+                <li><strong>Edad:</strong> 18</li>
+                <li><strong>Correo:</strong> pablo.gutierrez@ucsp.edu.pe</li>
+                <li><strong>Semestre:</strong> Primero</li>
+                <li><strong>Ubicación:</strong> Arequipa, Perú</li>
+                <br>
+                <p>Soy estudiante de primer semestre de Ciencia de la Computación en la Universidad Católica San Pablo. 
+                Tengo una profunda vocación por la investigación de vulnerabilidades de datos, el hacking ético y la ciberseguridad. 
+                Disfruto estructurar proyectos de programación en lenguajes como Python y C++, además de explorar cómo aplicar 
+                la inteligencia artificial al scouting en el fútbol profesional y desarrollar sitios web. Mi objetivo 
+                es continuar mi especialización tecnológica, aportando tanto en competencias de desarrollo de software 
+                como en conferencias de innovación y análisis de datos.</p>   
+            </div>
+        </section>
 
-            <td align="right" valign="top" width="160">
-                <img src="faviconcs.png.png" alt="Logo UCSP" width="150">
-            </td>
-        </tr>
-    </table>
+        <section class="courses">
+            <h2>Formación y Cursos</h2>
+            <div class="course-item">
+                <h3>Semestre 1 (UCSP)</h3>
+                <ul>
+                    <li>Fundamentos de Programación</li>
+                    <li>Introducción a la Ciencia de la Computación</li>
+                    <li>Taller Extracurricular de Ajedrez</li>
+                    <li>Proyecto URBAN JET (Desarrollo Web)</li>
+                </ul>
+            </div>
+            <div class="course-item">
+                <h3>Certificaciones Adicionales</h3>
+                <ul>
+                    <li>CS50: Introduction to Computer Science (Harvard)</li>
+                    <li>Fundamentos de Python 1 (NetAcad)</li>
+                    <li>Certificación de Francés B2 (Alianza Francesa)</li>
+                </ul>
+            </div>
+        </section>
 
-    <hr>
+        <section class="contact">
+            <h2>Mi contacto</h2>
+            <ul>
+                <li><a href="#" target="_blank">🔗 Mi LinkedIn</a></li>
+                <li><a href="#" target="_blank">🔗 Instagram</a></li>
+                <li><a href="https://github.com/" target="_blank">🔗 GitHub</a></li>
+                <li><a href="mailto:pablogutierrezp23@gmail.com" target="_blank">📧 Gmail Personal</a></li>
+            </ul>
+        </section>
 
-    <h2>Sobre mí</h2>
-    <p>Soy un estudiante de Ciencias de la computación, motivado por la investigación profunda y análisis de vulnerabilidades de datos junto con el hacking ético. Actualmente curso mi primer semestre en la Universidad Católica San Pablo en Arequipa, Perú.</p>
+        <section class="teachers">
+            <h2>Profesores y Referencias</h2>
+            <ul>
+                <li><a href="http://socios.spc.org.pe/ecuadros/" target="_blank">👨‍🏫 Ernesto Cuadros-Vargas - Website</a></li>
+                <li><a href="https://owasp.org/" target="_blank">🛡️ OWASP Foundation - Website</a></li>
+                <li><a href="https://www.computer.org/" target="_blank">🌐 IEEE Computer Society</a></li>
+            </ul>
+        </section>
 
-    <h2>Educación</h2>
-    <ul>
-        <li><strong>Educacion Inicial, Primaria y Secundaria</strong> - <a href="https://colegiointer.edu.pe/">Colegio Internacional Peruano Británico</a></strong></li>
-        <li><strong>Ciencia de la Computación</strong> - <a href="https://ucsp.edu.pe/">Universidad Católica San Pablo</a> (En curso)</li>
-        <li><strong>Certificación de Francés B2</strong> - <a href="https://afarequipa.org.pe/">Alianza Francesa de Arequipa</a></li>
-        <li><strong>Certificación de Inglés B2</strong> - <a href="https://pe.naturalenglish.com/">Natural English Perú</a></li>
-        <li><strong>Curso de CS50 (Harvard University)</strong> - <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">CS50: Introduction to Computer Science</a></li>
-    </ul>
+        <section class="mates">
+            <h2>Compañeros</h2>
+            <ul>
+                <li><a href="https://crigo23.github.io/Diego-Cristopher-Urday-Palomino/" target="_blank">💻 Diego Cristopher Urday Palomino</a></li>
+                <!-- Puedes añadir a tus demás compañeros de la universidad aquí -->
+            </ul>
+        </section>
+    </div>
 
-    <h2>Intereses Técnicos y Futuros</h2>
-    <ul>
-        <li>Programación en Python y C++</li>
-        <li>Ciberseguridad y Auditoría de Sistemas</li>
-        <li>Desarrollo de proyectos con IA aplicados al scouting de futbol profesional</li>
-        <li>Especialización en vulneración y recuperación de datos</li>
-        <li>Web Developer on HTML</li>
-    </ul>
-
-    <h2>Contacto</h2>
-    <p>Gmail: <a href="mailto:pablo.gutierrez@ucsp.edu.pe">pablo.gutierrez@ucsp.edu.pe</a></p>
+    <footer>
+        <p>&copy; 2026 Pablo Joaquin Gutierrez Pilco. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
